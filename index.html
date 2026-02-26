@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Developer Portfolio</title>
   </head>
@@ -12,16 +18,16 @@
         <h1 class="logo">Hermann.dev</h1>
         <nav>
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <section id="about" class="about reveal">
       <div class="container">
         <h2>Hi, I'm Hermann</h2>
         <p>Systems Engineer & Backend Developer</p>
@@ -29,7 +35,7 @@
       </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal">
       <div class="container">
         <h2>Technologies</h2>
         <div class="skills-grid">
@@ -41,19 +47,41 @@
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects reveal">
       <div class="container">
         <h2>Projects</h2>
+
         <div class="projects-grid">
           <div class="project-card">
-            <h3>Medical Imaging Service</h3>
-            <p>Microservice for processing DICOM studies.</p>
+            <h3>Medical Imaging MicroService</h3>
+            <p>
+              Microservice that processes DICOM files and associates studies
+              using Clean Architecture.
+            </p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Docker</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>File Storage Service</h3>
+            <p>
+              Service for uploading and retrieving medical lab files from S3
+              storage.
+            </p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>AWS S3</span>
+              <span>Microservices</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact reveal">
       <div class="container">
         <h2>Contact</h2>
         <p>Let's build something together.</p>
