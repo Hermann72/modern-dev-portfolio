@@ -156,6 +156,10 @@ nav a.active::after {
   z-index: -1;
 }
 
+.skills {
+  text-align: center;
+}
+
 .skills-grid {
   margin-top: 40px;
   display: grid;
