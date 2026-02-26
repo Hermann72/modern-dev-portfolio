@@ -202,16 +202,24 @@ nav a.active::after {
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2.2rem;
+  .menu-toggle {
+    display: block;
   }
 
   nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0f172a;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
     display: none;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
+  nav ul.active {
+    display: flex;
   }
 }
 
@@ -254,4 +262,13 @@ h2 {
 
 .accent {
   color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
 }
