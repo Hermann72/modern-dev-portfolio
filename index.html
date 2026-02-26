@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Developer Portfolio</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">Hermann.dev</h1>
+        <nav>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Hi, I'm Hermann</h2>
+        <p>Systems Engineer & Backend Developer</p>
+        <button onclick="scrollToProjects()">View Projects</button>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Spring Boot</div>
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">PostgreSQL</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Medical Imaging Service</h3>
+            <p>Microservice for processing DICOM studies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let's build something together.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;2026 Hermann Rodriguez T.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
