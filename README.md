@@ -6,6 +6,12 @@ Modern dark-themed developer portfolio built with HTML, CSS and JavaScript.
 
 https://hermann72.github.io/modern-dev-portfolio/
 
+## Preview
+
+<p align="center">
+  <img src="assets/portfolio-preview.png" width="800">
+</p>
+
 ## About the Project
 
 This project is my personal developer portfolio.
