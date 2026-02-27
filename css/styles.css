@@ -101,6 +101,7 @@ nav a.active::after {
 .about {
   text-align: center;
   padding: 140px 0;
+  overflow: hidden;
   position: relative;
 }
 
