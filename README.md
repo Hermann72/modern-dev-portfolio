@@ -8,9 +8,7 @@ https://hermann72.github.io/modern-dev-portfolio/
 
 ## Preview
 
-<p align="center">
-  <img src="assets/portfolio-preview.png" width="800">
-</p>
+![Portfolio Preview](assets/images/portfolio-preview.png)
 
 ## About the Project
 
