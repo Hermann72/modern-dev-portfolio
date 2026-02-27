@@ -52,6 +52,7 @@ section {
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  z-index: 1000;
 }
 
 .navbar .container {
@@ -209,6 +210,11 @@ nav a.active::after {
 
 .menu-toggle {
   display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
 }
 
 /* Mobile */
@@ -274,13 +280,4 @@ h2 {
 
 .accent {
   color: var(--accent);
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  color: var(--text-primary);
-  cursor: pointer;
 }
