@@ -143,6 +143,7 @@ nav a.active::after {
   transform: translateY(-2px);
 }
 
+/*
 .about::before {
   content: "";
   position: absolute;
@@ -158,6 +159,7 @@ nav a.active::after {
   transform: translateX(-50%);
   z-index: -1;
 }
+*/
 
 .skills {
   text-align: center;
