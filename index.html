@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=3" />
     <title>Hermann | Backend Developer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
@@ -20,6 +20,7 @@
         <nav>
           <ul id="nav-menu">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -37,6 +38,20 @@
           software architecture.
         </p>
         <button id="view-projects-btn">View Projects</button>
+        <p class="about-stack">
+          Java • Spring Boot • Microservices • Cloud • AI-assisted development
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="experience reveal">
+      <div class="container">
+        <h2>Experience</h2>
+        <p>
+          Systems Engineer specialized in backend development with Java and
+          microservices architecture. Currently working on distributed systems,
+          medical imaging processing and cloud integrations.
+        </p>
       </div>
     </section>
 
@@ -62,29 +77,40 @@
           <div class="project-card">
             <h3>Medical Imaging MicroService</h3>
             <p>
-              Microservice that processes DICOM files and associates studies
-              using Clean Architecture.
+              Backend microservice designed to process medical imaging studies
+              (DICOM files) from compressed archives, extract metadata, and
+              integrate with external PACS systems using Clean Architecture.
             </p>
             <div class="project-tech">
               <span>Java</span>
               <span>Spring Boot</span>
+              <span>Reactive Programming</span>
               <span>Docker</span>
             </div>
+            <span class="private-project">Private Enterprise Project</span>
           </div>
 
           <div class="project-card">
             <h3>File Storage Service</h3>
             <p>
-              Service for uploading and retrieving medical lab files from S3
-              storage.
+              Service for uploading and retrieving medical lab files from AWS -
+              S3 storage.
             </p>
             <div class="project-tech">
               <span>Java</span>
+              <span>Spring Boot</span>
               <span>AWS S3</span>
               <span>Microservices</span>
+              <span>Docker</span>
             </div>
+            <span class="private-project">Private Enterprise Project</span>
           </div>
         </div>
+        <br />
+        <p class="projects-note">
+          * Some projects correspond to enterprise systems where source code
+          cannot be shared.
+        </p>
       </div>
     </section>
 
@@ -122,8 +148,13 @@
       </div>
     </section>
 
-    <footer>
-      <p>&copy;2026 Hermann Rodríguez T.</p>
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Hermann.dev — Backend Developer</p>
+        <span class="footer-note"
+          >Designed & built by Hermann Rodríguez T.</span
+        >
+      </div>
     </footer>
 
     <script src="./js/main.js" defer></script>

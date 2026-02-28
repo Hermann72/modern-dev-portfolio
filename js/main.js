@@ -46,11 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function setActiveLink() {
     let currentSection = "";
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.clientHeight;
+    const scrollPosition = window.scrollY + 150;
 
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
         currentSection = section.getAttribute("id");
       }
     });

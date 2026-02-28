@@ -101,7 +101,7 @@ nav a.active::after {
 
 .about {
   text-align: center;
-  padding: 140px 0;
+  padding: 120px 0;
   overflow: clip;
   position: relative;
 }
@@ -143,7 +143,6 @@ nav a.active::after {
   transform: translateY(-2px);
 }
 
-/*
 .about::before {
   content: "";
   position: absolute;
@@ -159,7 +158,6 @@ nav a.active::after {
   transform: translateX(-50%);
   z-index: -1;
 }
-*/
 
 .skills {
   text-align: center;
@@ -247,6 +245,11 @@ nav a.active::after {
   #nav-menu.active {
     display: flex;
   }
+
+  .about::before {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 .reveal {
@@ -290,6 +293,10 @@ h2 {
   color: var(--accent);
 }
 
+.contact {
+  min-height: 60vh;
+}
+
 .contact-grid {
   margin-top: 40px;
   display: grid;
@@ -314,4 +321,50 @@ h2 {
 
 .contact-card h3 {
   margin-bottom: 8px;
+}
+
+.about-stack {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.private-project {
+  background: #1f2937;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: var(--space-xl);
+  padding: 30px 0;
+  background: var(--bg-secondary);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-note {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #6b7280;
 }
