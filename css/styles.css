@@ -225,6 +225,10 @@ nav a.active::after {
     display: block;
   }
 
+  nav ul {
+    flex-direction: column;
+  }
+
   #nav-menu {
     position: absolute;
     top: 70px;
